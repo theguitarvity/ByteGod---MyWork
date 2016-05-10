@@ -64,6 +64,23 @@ function tempo(){
 	form.cronometro.value = hora +":"+ minuto +":"+ segundo
 }
 
+function stop() {
+  form.cronometro.value = "00:00:00";
+}
+
+
+
+function play() {
+  if(form.cronometro.value == "00:00:00")
+  {
+    setInterval('tempo()',983);
+  }
+  else {
+    // stop();
+    document.getElementById("form_cronometro").submit();    
+  }  
+}
+
   $(document).ready(function(){    
             
 
@@ -75,8 +92,10 @@ function tempo(){
             });
             
             $(".glyphicon-stop").click(function(){
+                $("#button").attr("onclick", "stop()");
                 $("#button").removeClass("glyphicon-stop");
                 $("#button").addClass("glyphicon-play");
+                
             });           
             // final da animaÃ§Ã£o
         });
@@ -92,16 +111,12 @@ function tempo(){
     input[name="cronometro"] {
       border: 0;
       width: 100%;
+      text-align: center;
     }
     
-    .relogio button,
-    .relogio button::focus,    
-    .relogio button::active {
-      border: 0;
-      background: transparent;
-      
+    .relogio #button {
+      cursor: pointer;
     }
-    
   </style>
 
 </head>
@@ -139,10 +154,10 @@ function tempo(){
       <div class="col-sm-12 col-md-12 main">
 
         <div class="relogio">
-          <form name="form">
+          <form id="form_cronometro" action="submitTest.php" method="POST" name="form">
             <input type="text" name="cronometro" value="00:00:00" />
             <br />
-            <button type="button" onclick="setInterval('tempo()',983);return false;"><span id="button" class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+            <span id="button" onclick="play()" class="glyphicon glyphicon-play" aria-hidden="true"></span>
           </form>
         </div>
 
