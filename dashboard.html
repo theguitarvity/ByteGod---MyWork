@@ -137,14 +137,14 @@ function play() {
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Settings</a></li>
+          <li><a href="#">Sair</a></li>
+          <!--<li><a href="#">Settings</a></li>
           <li><a href="#">Profile</a></li>
-          <li><a href="#">Help</a></li>
+          <li><a href="#">Help</a></li>-->
         </ul>
-        <form class="navbar-form navbar-right">
+        <!--<form class="navbar-form navbar-right">
           <input type="text" class="form-control" placeholder="Search...">
-        </form>
+        </form>-->
       </div>
     </div>
   </nav>
@@ -154,8 +154,8 @@ function play() {
       <div class="col-sm-12 col-md-12 main">
 
         <div class="relogio">
-          <form id="form_cronometro" action="submitTest.php" method="POST" name="form">
-            <input type="text" name="cronometro" value="00:00:00" />
+          <form id="form_cronometro" action="submitTest.php" method="POST" name="form"/>
+            <input type="text" name="cronometro" value="00:00:00" disabled/>
             <br />
             <span id="button" onclick="play()" class="glyphicon glyphicon-play" aria-hidden="true"></span>
           </form>
