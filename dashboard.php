@@ -10,7 +10,7 @@
   <meta name="author" content="">
   <link rel="icon" href="../../favicon.ico">
 
-  <title>Dashboard Template for Bootstrap</title>
+  <title>Kronos - Dashboard</title>
 
   <!-- Bootstrap core CSS -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -133,10 +133,13 @@ function play() {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">PontoDigital</a>
+          <img src="assets/img/oioi.png" style="width: 50px; height: 50px;">
+       
       </div>
+       <a class="navbar-brand" href="#">Kronos - Sistema de Gerenciamento de Hora Programada</a>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Olá, Victor</a></li>  
           <li><a href="#">Sair</a></li>
           <!--<li><a href="#">Settings</a></li>
           <li><a href="#">Profile</a></li>
