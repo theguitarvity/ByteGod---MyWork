@@ -81,11 +81,7 @@ function play() {
   }  
 }
 
-  $(document).ready(function(){    
-            
-
-            //AnimaÃ§Ã£o do 'search by options'
-
+  $(document).ready(function(){                
             $(".glyphicon-play").click(function(){
                 $("#button").removeClass("glyphicon-play");
                 $("#button").addClass("glyphicon-stop");

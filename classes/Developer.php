@@ -47,6 +47,5 @@ class Developer {
         $this->funcaoDeveloper = $funcaoDeveloper;
     }
 
-
 }
 ?>
